@@ -1,0 +1,21 @@
+{% extends 'journal/navbar.html' %}
+<html>
+    {% block content %}    
+    <br>    
+    <div class="container bg-white shadow-md p-5 form-layout">
+   
+        <h1> Delete Username & Email </h1>
+        <p>Are you sure?</p>
+        <br>
+        <form method="POST" autocomplete="off">
+            {% csrf_token %}
+            <button class="btn btn-secondary btn-md w-100 btn-block p-30" type="submit"> Delete User </button>
+        </form> 
+        <br>
+        <br>
+        <a href="{% url 'profile-management' %}"> Return To User Profile </a>
+   
+    </div>
+    <br>
+    {% endblock  %}
+</html>

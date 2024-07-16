@@ -1,0 +1,25 @@
+{% extends 'journal/navbar.html' %}
+<html>
+    {% block content %}    
+    <br>
+        {% for thought in AllThoughts %}
+            <div class="container bg-white shadow-md p-5 form-layout">
+                {{thought.title}}
+                <br>
+                {{thought.content}}
+                <br>
+                {{thought.date_posted}}
+                <br>
+                <hr>
+                <p>-{{thought.user}}</p>
+                <!--we will access the url to update the view based on the id 
+                while clicking on update link-->
+                <a href="{% url 'update-thought' thought.id %}" > Update Your Thought </a>
+                <br>
+                <a href="{% url 'delete-thought' thought.id %}" > Delete Your Thought </a>
+
+            </div>
+            <br>
+        {% endfor %}    
+    {% endblock  %}
+</html>
