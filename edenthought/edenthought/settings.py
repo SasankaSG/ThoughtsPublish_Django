@@ -149,7 +149,7 @@ EMAIL_USE_TLS = 'True'
 EMAIL_HOST_USER = 'sasankasi@gmail.com'
 EMAIL_HOST_PASSWORD = '' #google created password
 
-DEFAULT_FROM_EMAIL = 'sasankasrungarakavi@gmail.com'
+DEFAULT_FROM_EMAIL = 'sasankasi@gmail.com'
 
 
 
