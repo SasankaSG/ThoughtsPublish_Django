@@ -146,8 +146,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = 'True'
  
-EMAIL_HOST_USER = 'sasankasrungarakavi@gmail.com'
-EMAIL_HOST_PASSWORD = 'ouzv vdsr mtxd wbwu'
+EMAIL_HOST_USER = 'sasankasi@gmail.com'
+EMAIL_HOST_PASSWORD = '' #google created password
 
 DEFAULT_FROM_EMAIL = 'sasankasrungarakavi@gmail.com'
 
